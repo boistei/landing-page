@@ -5,14 +5,26 @@ html {
     sans-serif;
 }
 
-ul{
-    list-style-type: none;
+body {
     margin: 0;
     padding: 0;
 }
 
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 20px;
+}
+
 li {
     display: inline;
+    padding: 0 10px;
+    transition-delay: 500ms;
+    transition-property: background-color;
 }
 
 .navbar {
@@ -30,6 +42,7 @@ li {
 .logo {
     font-size: 24px;
     font-weight: bold;
+    padding-left: 20px;
 }
 
 .navitems {
@@ -39,4 +52,30 @@ li {
 .navitems:hover {
     background-color: white;
     color: #1F2937;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1F2937;
+}
+
+.description h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: extra-bold;
+}
+
+.description p {
+    color: #F9FAF8;
+}
+
+img {
+    max-width: 500px;
+    max-height: auto;
+    object-fit: contain;
+}
+
+.sec1 div {
+    border: 1px solid red;
 }
